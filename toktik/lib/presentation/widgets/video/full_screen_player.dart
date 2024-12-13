@@ -15,6 +15,7 @@ class FullScreenPlayer extends StatefulWidget {
 
 class _FullScreenPlayerState extends State<FullScreenPlayer> {
   late VideoPlayerController controller;
+  
   @override
   void initState() {
     super.initState();
