@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widgets_app/config/menu/menu_items.dart';
+import 'package:widgets_app/presentation/screens/buttons/buttons_screens.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -33,7 +34,6 @@ class _HomeView extends StatelessWidget {
 
 class _CustomListTile extends StatelessWidget {
   const _CustomListTile({
-    super.key,
     required this.menuItem,
   });
 
@@ -52,7 +52,12 @@ class _CustomListTile extends StatelessWidget {
       title: Text(menuItem.title),
       subtitle: Text(menuItem.subTitle),
       onTap: () {
-        // TODO: Navegar a otra pantalla
+       
+
+
+       // ? En lugar de usar el routes, usaremos el de arriba, goRouter para navegar. Es mejor
+       // ? para la navegación de la app ya que si no esta autenticado no te deja avanzar etc ...
+      //  Navigator.pushNamed(context, menuItem.link);
       },
     );
   }
