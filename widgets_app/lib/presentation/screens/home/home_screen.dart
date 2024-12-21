@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:widgets_app/config/menu/menu_items.dart';
-import 'package:widgets_app/presentation/screens/buttons/buttons_screens.dart';
+
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -52,12 +53,19 @@ class _CustomListTile extends StatelessWidget {
       title: Text(menuItem.title),
       subtitle: Text(menuItem.subTitle),
       onTap: () {
-       
+        // ? En lugar de usar el routes, usaremos el de arriba, goRouter para navegar. Es mejor
+        // ? para la navegación de la app ya que si no esta autenticado no te deja avanzar etc ...
+        // Navigator.of(context).push(
+        //   MaterialPageRoute(
+        //     builder: (context) => const ButtonsScreens(),
+        //   ),
+        // );
 
 
-       // ? En lugar de usar el routes, usaremos el de arriba, goRouter para navegar. Es mejor
-       // ? para la navegación de la app ya que si no esta autenticado no te deja avanzar etc ...
-      //  Navigator.pushNamed(context, menuItem.link);
+        // Navigator.pushNamed(context, menuItem.link);
+
+        // ? Con GoRouter
+        context.push(menuItem.link);
       },
     );
   }
