@@ -186,7 +186,7 @@ class _CardType4 extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return Card(
-      // ? Evita que el contenido del card se recorte
+      // * Evita que el contenido del card se recorte
       clipBehavior: Clip.hardEdge,
       elevation: elevation,
       child: Stack(

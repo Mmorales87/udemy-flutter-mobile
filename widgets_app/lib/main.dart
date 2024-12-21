@@ -20,8 +20,8 @@ class MainApp extends StatelessWidget {
 
 
 
-      // ? En lugar de usar el routes, usaremos el de arriba, goRouter para navegar. Es mejor
-       // ? para la navegación de la app ya que si no esta autenticado no te deja avanzar etc ...
+      // * En lugar de usar el routes, usaremos el de arriba, goRouter para navegar. Es mejor
+      // * para la navegación de la app ya que si no esta autenticado no te deja avanzar etc ...
       // routes: {
       //   '/buttons': (context) =>  const ButtonsScreens(),
       //   '/cards': (context) =>  const CardsScreen(),
