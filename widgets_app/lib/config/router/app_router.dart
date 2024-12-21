@@ -1,23 +1,23 @@
 import 'package:go_router/go_router.dart';
-
 import '../../presentation/screens/screens.dart';
 
 // GoRouter configuration
 final appRouter = GoRouter(
-    initialLocation: '/',
+  initialLocation: '/',
   routes: [
-
-
     GoRoute(
       path: '/',
+      name: HomeScreen.name,
       builder: (context, state) => const HomeScreen(),
     ),
     GoRoute(
       path: '/buttons',
+      name: ButtonsScreens.name,
       builder: (context, state) => const ButtonsScreens(),
     ),
     GoRoute(
       path: '/cards',
+      name: CardsScreen.name,
       builder: (context, state) => const CardsScreen(),
     ),
   ],
