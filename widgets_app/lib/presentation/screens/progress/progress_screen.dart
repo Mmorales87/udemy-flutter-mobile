@@ -62,6 +62,7 @@ class _ControlledProgressIndicator extends StatelessWidget {
               children: [
                 CircularProgressIndicator(
                   backgroundColor: Colors.black45,
+                  color: Colors.lightGreenAccent,
                   strokeWidth: 3,
                   value: progressValue,
                 ),
@@ -69,7 +70,7 @@ class _ControlledProgressIndicator extends StatelessWidget {
                 Expanded(
                   child: LinearProgressIndicator(
                     backgroundColor: Colors.black45,
-                    color: Colors.limeAccent,
+                    color: Colors.deepPurpleAccent,
                     value: progressValue,
                   ),
                 ),

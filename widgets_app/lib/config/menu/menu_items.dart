@@ -19,7 +19,7 @@ const appMenuItems = <MenuItem>[
       subTitle: 'Varios botones en Flutter',
       link: '/buttons',
       icon: Icons.smart_button_outlined),
-      
+
   MenuItem(
       title: 'Tarjetas',
       subTitle: 'Un contenedor estilizado',
@@ -31,4 +31,9 @@ const appMenuItems = <MenuItem>[
       subTitle: 'Generales y controlados',
       link: '/progress',
       icon: Icons.refresh_rounded),
+  MenuItem(
+      title: 'Snackbars y diálogos',
+      subTitle: 'Indicadores en pantalla',
+      link: '/snackbars',
+      icon: Icons.info_outline),
 ];
