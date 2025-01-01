@@ -8,7 +8,7 @@ class ThemeChagerScreen extends ConsumerWidget {
   const ThemeChagerScreen({super.key});
 
   @override
-  Widget build(BuildContext context, ref) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final isDarkMode = ref.watch(themeNotifierProvider).isDarkMode;
     return Scaffold(
       appBar: AppBar(
