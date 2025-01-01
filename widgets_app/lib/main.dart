@@ -17,17 +17,15 @@ class MainApp extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, ref) {
-    final isDarkMode = ref.watch(isDarkModeProvider);
-    final selectedColor = ref.watch(selectedIndexColorProvider);
+    // final isDarkMode = ref.watch(isDarkModeProvider);
+    // final selectedColor = ref.watch(selectedIndexColorProvider);
+    final AppTheme appTheme = ref.watch(themeNotifierProvider);
 
     return MaterialApp.router(
       title: 'Flutter Widgets',
       routerConfig: appRouter,
       debugShowCheckedModeBanner: false,
-      theme: AppTheme(
-              selectedColor: selectedColor,
-              isDarkMode: isDarkMode ? true : false)
-          .getTheme(),
+      theme: appTheme.getTheme(),
 
       // * En lugar de usar el routes, usaremos el de arriba, goRouter para navegar. Es mejor
       // * para la navegación de la app ya que si no esta autenticado no te deja avanzar etc ...

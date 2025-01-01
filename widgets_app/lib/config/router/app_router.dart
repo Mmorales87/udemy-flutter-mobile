@@ -1,6 +1,4 @@
 import 'package:go_router/go_router.dart';
-import 'package:widgets_app/presentation/screens/counter/counter_screen.dart';
-import 'package:widgets_app/presentation/screens/theme_changer/theme_chager_screen.dart';
 import '../../presentation/screens/screens.dart';
 
 // GoRouter configuration

@@ -1,6 +1,5 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
-import 'package:widgets_app/presentation/screens/snackbar/snackbar_screen.dart';
 import 'package:go_router/go_router.dart';
 
 class SlideInfo {
@@ -86,7 +85,7 @@ class _AppTutorialScreenState extends State<AppTutorialScreen> {
             top: 50,
             child: TextButton(
               onPressed: () => context.pop(),
-              child: Text('Skip'),
+              child: const Text('Skip'),
             ),
           ),
           endReached
@@ -98,13 +97,11 @@ class _AppTutorialScreenState extends State<AppTutorialScreen> {
                     delay: const Duration(seconds: 1),
                     child: FilledButton(
                       onPressed: () => context.pop(),
-                      child: Text('Start'),
+                      child: const Text('Start'),
                     ),
                   ),
                 )
               : const SizedBox(),
-
-
         ],
       ),
     );

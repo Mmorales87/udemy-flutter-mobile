@@ -98,8 +98,6 @@ class _UIControlsViewState extends State<_UIControlsView> {
             ),
           ],
         ),
-
-        // TODO:
         CheckboxListTile(
           title: const Text('¿Incluir desayuno?'),
           value: wantsBreakfast,
