@@ -7,6 +7,17 @@ final movieInfoProvider = StateNotifierProvider<MovieMapNotifier, Map<String, Mo
   return MovieMapNotifier(getMovie: movieRepository.getMovieById);
 });
 
+// ignore: slash_for_doc_comments
+/**
+ * {
+    '509987' : Movie(),
+    '509988' : Movie(),
+    '509989' : Movie(),
+    '509990' : Movie(),
+    '509991' : Movie(),
+ * }
+ */
+
 typedef GetMovieCallback = Future<Movie> Function(String movieId);
 
 class MovieMapNotifier extends StateNotifier<Map<String, Movie>> {
@@ -16,7 +27,6 @@ class MovieMapNotifier extends StateNotifier<Map<String, Movie>> {
 
   Future<void> loadMovie(String movieId) async {
     if (state[movieId] != null) return;
-    print('realizando peticion http');
     final movie = await getMovie(movieId);
 
     state = {...state, movieId: movie};
