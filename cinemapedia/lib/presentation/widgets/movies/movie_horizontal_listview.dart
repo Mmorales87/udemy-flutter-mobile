@@ -145,11 +145,16 @@ class _Slide extends StatelessWidget {
                 ),
                 const SizedBox(width: 3),
                 Text(
-                  '${movie.voteAverage}',
+                  HumanFormats.number(movie.voteAverage, 1).toString(),
                   style: textStyle.bodyMedium
                       ?.copyWith(color: Colors.yellow.shade800),
                 ),
                 const Spacer(),
+                Icon(
+                  Icons.people_outline_sharp,
+                  color: Colors.grey.shade500,
+                ),
+                const SizedBox(width: 3),
                 Text(
                   HumanFormats.number(movie.popularity),
                   style: textStyle.bodySmall,
